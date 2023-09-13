@@ -1,8 +1,54 @@
 {
-    "Users": [
-        
-    ],
-    "Blog": [
-        
-    ]
+  "Users": [],
+  "Blog": [
+    {
+      "title": "a",
+      "description": "a",
+      "author": "a",
+      "image": "1694527977416-phone.png",
+      "id": 1
+    },
+    {
+      "title": "blog1",
+      "description": "new blog",
+      "author": "reem",
+      "image": "1694528600096-176967646_1219264591809800_4912522610636277076_n-removebg-preview (1).png",
+      "id": 2
+    },
+    {
+      "title": "blog2",
+      "description": "new blog2",
+      "author": "ikram",
+      "image": "1694528658019-cursor.png",
+      "id": 3
+    },
+    {
+      "title": "blog3",
+      "description": "new blog3",
+      "author": "marouane",
+      "image": "1694530958634-traditional-white-moroccan-djellaba-one-most-popular-moroccan-mens-clothes_540598-26-1.avif",
+      "id": 4
+    },
+    {
+      "title": "mmmm",
+      "description": "aaaa",
+      "author": "bbbb",
+      "image": "1694549849985-product-8.png",
+      "id": 5
+    },
+    {
+      "title": "rrrrrrr",
+      "description": "aaaaaaaaaa",
+      "author": "bbbbbbb",
+      "image": "1694550075898-product-9.png",
+      "id": 7
+    },
+    {
+      "title": "How to create UI design",
+      "description": "figmaaaaaa",
+      "author": "Annaa",
+      "image": "1694550251633-img1.png",
+      "id": 8
+    }
+  ]
 }
