@@ -1,61 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
     <title>Dashboard</title>
-    <style>
-        .dashboard-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.profile-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.blog-form {
-  margin-bottom: 20px;
-}
-
-.blog-form input, .blog-form textarea {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.logout-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-}
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="dashboard-container">
-        <div class="user-info">
-            <img src="" alt="Profile Image" class="profile-image">
-            <h1>Welcome, rim</h1>
-        </div>
-        <form class="blog-form">
-            <h2>Add a New Blog Post</h2>
-            <input type="text" placeholder="Title" name="title">
-            <textarea placeholder="Content" name="content"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <a href="/logout" class="logout-btn">Log Out</a>
+      <div class="user-info">
+        <img
+          src="/uploads/<%=image%>"
+          alt="Profile Image"
+          class="profile-image"
+        />
+        <h1>Welcome, <%= name %></h1>
+      </div>
+      <form
+        action="addingBlog"
+        method="Post"
+        class="blog-form"
+        enctype="multipart/form-data"
+      >
+        <h2>Add a New Blog Post</h2>
+        <input type="text" placeholder="Title" name="title" />
+        <textarea placeholder="Description" name="description"></textarea>
+        <input type="text" name="author" placeholder="Author" />
+        <input type="file" name="image" placeholder="Image" /><br /><br />
+        <button type="submit" name="submit">Submit</button>
+      </form>
+      <a href="/logout" class="logout-btn">Log Out</a>
     </div>
-</body>
+  </body>
 </html>

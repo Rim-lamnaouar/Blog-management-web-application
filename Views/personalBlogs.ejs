@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  left: 0;
+  z-index: 200;
+}
+
+header.shadow{
+  background: #fff;
+  box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+  transition: .5s;
+}
+
+header.shadow .logo{
+  color: #172317;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-right: 720px;
+}
+
+.logo span{
+  color: rgb(86, 77, 255);
+  font-size: 20px;
+}
+
+.login{
+  padding: 8px 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 4px;
+  background: rgb(86, 77, 255);
+  color: #fff;
+  float: right;
+}
+
+.login:hover{
+  background: rgb(70, 61, 239);
+  transition: .5s;
+}
+.post-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 7rem !important;
+}
+</style>
+<body>
+    <header>
+        <div class="container-fluid">
+          <a href="#" class="logo">Code <span>Hobbyist</span></a>
+          <a href="/allBlogs" class="login">Back to home page</a>
+        </div>
+    </header>
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="tech">Tech</span>
+        <span class="filter-item" data-filter="food">Food</span>
+        <span class="filter-item" data-filter="news">News</span>
+    </div>
+    <div class="post container">
+        <% personalBlogs.forEach(b => { %>
+        <div class="post-box tech">
+            <img src="/uploads/<%= b.image%>" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title"><%=b.title%></a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description"><%=b.description%></p>
+            <div class="profile">
+                <img src="uploads/person-1.jpg" alt="" class="profile-img">
+                <span class="profile-name"><%=b.author%></span>
+            </div>
+              <div>
+                <button><a href="/editBlog/<%= b.id %>" class="btn">Edit</a></button>
+                <button><a href="/deleteBlog/<%= b.id %>" class="btn">Delete</a></button>
+              </div>
+        </div>
+        <%})%>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

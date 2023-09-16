@@ -1,68 +1,62 @@
 {
   "Users": [
     {
-      "email": "rim@gmail.com",
-      "password": "$2b$10$/ijhAkZ69nR/vxRfQ66Lg.gbuip0emYyAHuL3sVOPUNmu/m.3/HqG",
-      "image": "1694634327986-cursor.png",
-      "id": 1
+      "userCode": "lmmhstqv61z194zbbl7",
+      "name": "marmar",
+      "email": "marouane@gmail.com",
+      "password": "$2b$10$pawODT9Tm48oqRRPsIzroe4R0jqpicGIGz/j1KpLDK8X7anl3glBi",
+      "image": "1694896811579-person_2.jpg",
+      "id": 3
+    },
+    {
+      "userCode": "lmmit0t5nqh3qj393h",
+      "name": "CupCake",
+      "email": "rim@rim.rim",
+      "password": "$2b$10$6DuJQV.Ih6a87UG3NtHvY.e2C.YiLTBJIChPJY6ylEiU6mwbnO6FC",
+      "image": "1694898500357-computer.png",
+      "id": 4
     }
   ],
   "Blog": [
     {
-      "title": "a",
-      "description": "a",
-      "author": "a",
-      "image": "1694527977416-phone.png",
-      "id": 1
-    },
-    {
-      "title": "blog1",
-      "description": "new blog",
-      "author": "reem",
-      "image": "1694528600096-176967646_1219264591809800_4912522610636277076_n-removebg-preview (1).png",
-      "id": 2
-    },
-    {
-      "title": "blog2",
-      "description": "new blog2",
-      "author": "ikram",
-      "image": "1694528658019-cursor.png",
-      "id": 3
-    },
-    {
-      "title": "blog3",
-      "description": "new blog3",
-      "author": "marouane",
-      "image": "1694530958634-traditional-white-moroccan-djellaba-one-most-popular-moroccan-mens-clothes_540598-26-1.avif",
-      "id": 4
-    },
-    {
-      "title": "mmmm",
-      "description": "aaaa",
-      "author": "bbbb",
-      "image": "1694549849985-product-8.png",
-      "id": 5
-    },
-    {
-      "title": "rrrrrrr",
-      "description": "aaaaaaaaaa",
-      "author": "bbbbbbb",
-      "image": "1694550075898-product-9.png",
+      "userCode": "lmmit0t5nqh3qj393h",
+      "title": "aaaa",
+      "description": "zzezeze",
+      "author": "eeeeeeee",
+      "image": "1694900546979-computer.png",
       "id": 7
     },
     {
-      "title": "How to create UI design",
-      "description": "figmaaaaaa",
-      "author": "Annaa",
-      "image": "1694550251633-img1.png",
+      "userCode": "lmmit0t5nqh3qj393h",
+      "title": "test",
+      "description": "ptipusa",
+      "author": "rim",
+      "image": "1694900713782-icon.png",
       "id": 8
     },
     {
-      "title": "AI",
-      "description": "AAAAAAAAAAAAAA",
-      "author": "Michel",
-      "image": "1694638938865-nicole-wolf-NdFREMS5P08-unsplash.jpg",
+      "userCode": "lmmhstqv61z194zbbl7",
+      "title": "yay",
+      "description": "i love rim",
+      "author": "marouane",
+      "image": "1694900836404-icon.png",
       "id": 9
+    },
+    {
+      "userCode": "lmmhstqv61z194zbbl7",
+      "title": "Hello",
+      "description": "my first l3iba",
+      "author": "me",
+      "image": "1694901621764-img-grid-3.jpg",
+      "id": 10
+    },
+    {
+      "userCode": "lmmhstqv61z194zbbl7",
+      "title": "zzzzzzzzzzzzzzzzzzz",
+      "description": "zzzzzzzzzzzzzzzzz",
+      "author": "za",
+      "image": "1694902437823-img-grid-1.jpg",
+      "id": 11
     }
   ]
 }

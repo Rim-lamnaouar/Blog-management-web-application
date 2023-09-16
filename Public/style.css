@@ -404,6 +404,34 @@ footer p{
     color: #fff;
 }
 
+div {
+    text-align: center;
+  }
+
+  button {
+    margin: 5px;
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(86, 77, 255);
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 55px;
+    height: 32px;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: rgb(93, 85, 251);
+  }
+  
+
 @media (max-width: 1060px){
     .container{
         margin: 0 auto;
