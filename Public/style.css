@@ -104,6 +104,7 @@ header.shadow .logo{
     display: grid;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .home-text{
