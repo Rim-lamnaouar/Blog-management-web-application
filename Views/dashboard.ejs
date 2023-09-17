@@ -5,8 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dashboard.css" />
     <title>Dashboard</title>
+    <style>
+  header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    z-index: 200;
+  }
+  
+  header.shadow{
+    background: #fff;
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: .5s;
+  }
+  
+  header.shadow .logo{
+    color: #172317;
+  }
+  
+  .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 170px;
+  }
+  
+  .logo span{
+    color: rgb(86, 77, 255);
+    font-size: 20px;
+  }
+  
+  .login{
+    padding: 8px 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgb(86, 77, 255);
+    color: #fff;
+    float: right;
+  }
+  
+  .login:hover{
+    background: rgb(70, 61, 239);
+    transition: .5s;
+  }
+  .post-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 7rem !important;
+  }
+  a{
+    text-decoration: none;
+}
+  </style>
   </head>
   <body>
+    <header>
+      <div class="container-fluid">
+        <a href="#" class="logo">Code <span>Hobbyist</span></a>
+        <a href="/personalBlogs" class="login">Back To Your Blogs</a>
+      </div>
+  </header>
     <div class="dashboard-container">
       <div class="user-info">
         <img
@@ -31,5 +95,7 @@
       </form>
       <a href="/logout" class="logout-btn">Log Out</a>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
   </body>
 </html>

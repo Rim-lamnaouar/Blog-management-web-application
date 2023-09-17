@@ -24,7 +24,7 @@ app.set("view engine", "ejs");
 app.use(express.static("Public"));
 
 
-const alreadyLoged =(req,res,next)=>{
+const alreadyLogged =(req,res,next)=>{
     const token = req.cookies.token
    
     if(token){
@@ -48,7 +48,6 @@ const logger =(req,res,next)=>{
     next()
   }
 
-
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "./Public/uploads/");
@@ -60,7 +59,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-app.get("/signUp&signIn", alreadyLoged,(req, res) => {
+app.get("/signUp&signIn", alreadyLogged,(req, res) => {
     res.render("signUp&signIn");
   });
 
@@ -79,7 +78,7 @@ app.post("/addingBlog", upload.single("image") ,logger, (req, res) => {
   };
   // console.log(newBlog)
   axios.post("http://localhost:3500/Blog", newBlog);
-  res.redirect("/allBlogs");
+  res.redirect("/personalBlogs");
   res.end();
 });
 
@@ -115,11 +114,8 @@ app.post("/signIn", (req, res) => {
       const user = users.find((user) => user.email === email);
       bcrypt.compare(password, user.password, (err, isPasswordCorrect) => {
           if (isPasswordCorrect) {
-              const token = jwt.sign({ userCode:user.userCode, name:user.name , image:user.image ,email: email }, secret);
-              console.log(token)
-        //   req.session.isAuthenticated = true;
-        //   req.session.name = user.name;
-        //   req.session.image = user.image;
+          const token = jwt.sign({ userCode:user.userCode, name:user.name , image:user.image ,email: email }, secret);
+          // console.log(token)
           res.cookie("token", token);
           res.redirect("/dashboard");
         } else {
@@ -132,13 +128,6 @@ app.post("/signIn", (req, res) => {
     });
 });
 
-// const isAuthenticated = (req, res, next) => {
-//     if (req.session.isAuthenticated) {
-//       return next();
-//     }
-//     res.redirect('/signIn');
-// };
-// isAuthenticated
 app.get('/dashboard',logger, (req, res) => {
     const name = req.name;
     const image = req.image;
@@ -146,17 +135,10 @@ app.get('/dashboard',logger, (req, res) => {
     res.render("dashboard" ,{ name , image })
 });
 
-// app.get("/logout", (req, res) => {
-//   res.clearCookie("token");
-//   res.redirect("/allBlogs");
-// });
-
-app.get('/logout', function(req, res){
-    req.session.destroy(function(){
-    //    console.log("user logged out.")
-    });
-    res.redirect('/allBlogs');
-  });
+app.get("/logout", (req, res) => {
+  res.clearCookie("token");
+  res.redirect("/allBlogs");
+});
 
 app.get("/allBlogs", async (req, res) => {
   let fetchBlogs = await axios.get("http://localhost:3500/Blog");
@@ -186,14 +168,14 @@ app.post("/editBlog/:id", upload.single("image"), async (req, res) => {
         updatedBlog.image = image.filename;
     }
     await axios.put(`http://localhost:3500/Blog/${id}`, updatedBlog);
-    res.redirect("/allBlogs");
+    res.redirect("/personalBlogs");
 }
 );
 
 app.get("/deleteBlog/:id", async (req, res) => {
     const id = req.params.id;
     await axios.delete(`http://localhost:3500/Blog/${id}`);
-    res.redirect("/allBlogs");
+    res.redirect("/personalBlogs");
     }
 );
 
@@ -209,10 +191,6 @@ app.get("/personalBlogs",logger, async (req, res) => {
       res.status(500).send("Internal Server Error");
     }
 });
-  
-// app.get('/myBlogs', (req, res) =>{
-//     res.render("myBlogs")
-// });
 
 app.use((req, res, next) => res.render("404"));
 

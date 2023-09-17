@@ -1,62 +1,102 @@
 {
   "Users": [
     {
-      "userCode": "lmmhstqv61z194zbbl7",
-      "name": "marmar",
-      "email": "marouane@gmail.com",
-      "password": "$2b$10$pawODT9Tm48oqRRPsIzroe4R0jqpicGIGz/j1KpLDK8X7anl3glBi",
-      "image": "1694896811579-person_2.jpg",
-      "id": 3
+      "userCode": "lmmmpea2r4huu89966f",
+      "name": "Rim",
+      "email": "rim@gmail.com",
+      "password": "$2b$10$JkrZGx5JkC9ChAOYZLjEWe9zTjdPVIBNMfht7BpE3wbIYiznRcLtC",
+      "image": "1694905049490-person-1.jpg",
+      "id": 1
     },
     {
-      "userCode": "lmmit0t5nqh3qj393h",
-      "name": "CupCake",
-      "email": "rim@rim.rim",
-      "password": "$2b$10$6DuJQV.Ih6a87UG3NtHvY.e2C.YiLTBJIChPJY6ylEiU6mwbnO6FC",
-      "image": "1694898500357-computer.png",
-      "id": 4
+      "userCode": "lmmmxvfls1imkymzs3",
+      "name": "Marouane",
+      "email": "marouane@gmail.com",
+      "password": "$2b$10$dmVHDlfOSI0R11Db2BjjH.NXba8kyhjSxQ8WB8pBgxxheXFYwjtAa",
+      "image": "1694905445015-person_2.jpg",
+      "id": 2
+    },
+    {
+      "userCode": "lmmn4g54b0u6jynlqvn",
+      "name": "Ikram",
+      "email": "ikram@gmail.com",
+      "password": "$2b$10$LN/ITF/Tu/aliu2UGMIuLOnbsU.3R7mOdsfx4IBughJBaNqcKfRN6",
+      "image": "1694905751813-person_4.jpg",
+      "id": 3
     }
   ],
   "Blog": [
     {
-      "userCode": "lmmit0t5nqh3qj393h",
-      "title": "aaaa",
-      "description": "zzezeze",
-      "author": "eeeeeeee",
-      "image": "1694900546979-computer.png",
+      "userCode": "lmmmpea2r4huu89966f",
+      "title": "Rim'Blogs",
+      "description": "My First Blog",
+      "author": "Rim",
+      "image": "1694905102974-product-5.png",
+      "id": 1
+    },
+    {
+      "userCode": "lmmmpea2r4huu89966f",
+      "title": "BI",
+      "description": "My Third Blog",
+      "author": "Rim",
+      "image": "1694905402260-img-grid-3.jpg",
+      "id": 3
+    },
+    {
+      "userCode": "lmmmxvfls1imkymzs3",
+      "title": "React JS",
+      "description": "Frontend",
+      "author": "Marouane",
+      "image": "1694905518048-product-9.png",
+      "id": 4
+    },
+    {
+      "userCode": "lmmmxvfls1imkymzs3",
+      "title": "Python",
+      "description": "Backend",
+      "author": "Marouane",
+      "image": "1694905557124-img-grid-1.jpg",
+      "id": 5
+    },
+    {
+      "userCode": "lmmmxvfls1imkymzs3",
+      "title": "Machine Learning",
+      "description": "backend and frontend aspects",
+      "author": "Marouane",
+      "image": "1694905685403-computer.png",
+      "id": 6
+    },
+    {
+      "userCode": "lmmn4g54b0u6jynlqvn",
+      "title": "Ikram's Blog",
+      "description": "My first blog",
+      "author": "Ikram",
+      "image": "1694905805661-product-8.png",
       "id": 7
     },
     {
-      "userCode": "lmmit0t5nqh3qj393h",
-      "title": "test",
-      "description": "ptipusa",
-      "author": "rim",
-      "image": "1694900713782-icon.png",
+      "userCode": "lmmn4g54b0u6jynlqvn",
+      "title": "Ikram's Blog",
+      "description": "My second blog",
+      "author": "Ikram",
+      "image": "1694905858427-product-6.png",
       "id": 8
     },
     {
-      "userCode": "lmmhstqv61z194zbbl7",
-      "title": "yay",
-      "description": "i love rim",
-      "author": "marouane",
-      "image": "1694900836404-icon.png",
+      "userCode": "lmmn4g54b0u6jynlqvn",
+      "title": "Ikram's Blog",
+      "description": "My third blog",
+      "author": "Ikram",
+      "image": "1694905888103-product-7.png",
       "id": 9
     },
     {
-      "userCode": "lmmhstqv61z194zbbl7",
-      "title": "Hello",
-      "description": "my first l3iba",
-      "author": "me",
-      "image": "1694901621764-img-grid-3.jpg",
+      "userCode": "lmmmpea2r4huu89966f",
+      "title": "AI",
+      "description": "My Second Blog",
+      "author": "Rim",
+      "image": "1694908446465-img-grid-2.jpg",
       "id": 10
-    },
-    {
-      "userCode": "lmmhstqv61z194zbbl7",
-      "title": "zzzzzzzzzzzzzzzzzzz",
-      "description": "zzzzzzzzzzzzzzzzz",
-      "author": "za",
-      "image": "1694902437823-img-grid-1.jpg",
-      "id": 11
     }
   ]
 }
